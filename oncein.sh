@@ -2,7 +2,7 @@
 
 seconds=$1
 shift
-cmd=$1
+cmd=`which $1`
 shift
 
 if [ x$seconds == 'x'  ] || [ x$cmd == 'x' ] || [ ! -x $cmd ] ; then
